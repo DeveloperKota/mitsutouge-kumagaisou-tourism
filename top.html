@@ -21,7 +21,7 @@
 
   <!-- Tailwind CSS (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
     .backdrop { 
@@ -40,14 +40,14 @@
     }
     .section-kicker { 
       letter-spacing: .25em;
-      font-family: 'Heebo', sans-serif;
+      font-family: 'Shippori Mincho', serif;
     }
     .prose p { 
       line-height: 1.8;
-      font-family: 'Heebo', sans-serif;
+      font-family: 'Shippori Mincho', serif;
     }
     .font-sans {
-      font-family: 'Heebo', sans-serif;
+      font-family: 'Shippori Mincho', serif;
     }
     .japanese-pattern {
       background-color: #ea580c !important;
@@ -65,6 +65,9 @@
       #faq { padding-top: 100px; }
       #access { padding-top: 100px; }
       #partners { padding-top: 100px; }
+      .font-serif {
+        font-family: 'Shippori Mincho', serif;
+      }
     }
   </style>
 
@@ -160,7 +163,7 @@
             <p class="section-kicker text-xs sm:text-sm md:text-base font-semibold text-white tracking-widest border-l-4 border-white pl-3 md:pl-4" data-ja="山梨県西桂町 ｜ 令和7年度 秋開催" data-en="Nishikatsura Town, Yamanashi | Fall 2025">山梨県西桂町 ｜ 令和7年度 秋開催</p>
             
             <h1 class="space-y-4 md:space-y-6">
-              <span class="block text-white sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" data-ja="三ツ峠から愛でる絶景富士！<br class=&quot;hidden sm:block&quot; />クマガイソウを守り「富士山おむすび」を満喫する２泊３日の旅" data-en="Experience the Magnificent Mt. Fuji from Mt. Mitsutouge!<br class=&quot;hidden sm:block&quot; />A 3-Day Journey of Conservation & Culinary Discovery">
+              <span class="block text-white sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" data-ja="三ツ峠から愛でる絶景富士！<br class=&quot;hidden sm:block&quot; />クマガイソウを守り「富士山おむすび」を満喫する２泊３日の旅" data-en="Discover the Magnificent Mt. Fuji from Mt. Mitsutouge!<br class=&quot;hidden sm:block&quot; />A 3-Day Journey of Conservation & Culinary Discovery">
                 三ツ峠から愛でる絶景富士！<br class="hidden sm:block" />クマガイソウを守り「富士山おむすび」を満喫する２泊３日の旅
               </span>
               
@@ -178,27 +181,23 @@
               </span>
             </p>
           </div>
-          <div class="mt-6 md:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-            <a href="#dates" class="bg-white text-black font-semibold rounded-xl px-4 py-3 md:px-6 md:py-3 shadow-soft flex items-center justify-center gap-2 text-sm md:text-base">
-              <span class="text-xl md:text-2xl">📅</span>
-              <span data-ja="ツアー日程を見る" data-en="View Dates">ツアー日程を見る</span>
-            </a>
-            <a href="#press" class="bg-white text-black font-semibold rounded-xl px-4 py-3 md:px-6 md:py-3 shadow-soft flex items-center justify-center gap-2 text-sm md:text-base">
-              <span class="text-xl md:text-2xl">📰</span>
-              <span data-ja="プレスリリースはこちら" data-en="Press Release">プレスリリースはこちら</span>
-            </a>
-          </div>
         </div>
         <div class="relative order-1 lg:order-2">
           <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-soft">
-            <img src="images/mount-mitsutouge.jpg" alt="三ツ峠山頂の富士山" data-ja="三ツ峠山頂の富士山" data-en="Mt. Fuji from Mt. Mitsutouge Summit" class="w-full h-full object-cover" />
+            <img src="images/mitsutouge.png" alt="三ツ峠山頂の富士山" data-ja="三ツ峠山頂の富士山" data-en="Mt. Fuji from Mt. Mitsutouge Summit" class="w-full h-full object-cover" />
           </div>
         </div>
+    </div>
+    <div class="mt-8 flex flex-wrap items-center gap-4 justify-center">
+      <a href="#dates" class="bg-white text-black font-semibold rounded-xl px-4 py-3 md:px-6 md:py-3 shadow-soft flex items-center justify-center gap-2 text-sm md:text-base">
+        <span class="text-xl md:text-2xl">📅</span>
+        <span data-ja="ツアー日程" data-en="Tour Dates">ツアー日程</span>
+      </a>
     </div>
   </section>
 
   <!-- About -->
-  <section id="local_challenge" class="bg-orange-50">
+  <section id="local_challenge" class="bg-orange-50 pb-16">
     <div class="container mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-start">
       <div class="prose">
         <h2 class="text-2xl md:text-3xl font-bold" data-ja="地域の挑戦：体験でつなぐ" data-en="Our Mission: Connecting Through Experience">地域の挑戦：体験でつなぐ</h2>
@@ -211,19 +210,19 @@
           <li>定員：各回1組あたり4名様まで</li>
           <li>料金：<strong>1組180,000円（税込）</strong> <br>※三ツ峠登山ガイド・クマガイソウ保護活動・富士山おむすび体験・宿泊含む</li>
         </ul>
-        <div class="mt-8 flex flex-wrap items-center gap-4 justify-center md:justify-start">
-          <a href="#dates" class="text-black font-semibold rounded-xl px-6 py-3 shadow-soft flex items-center gap-2">
-            <span class="text-2xl">📅</span>
-            <span data-ja="ツアー日程を見る" data-en="View Dates">ツアー日程を見る</span>
-          </a>
-        </div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <img src="images/mitsutougenoyado.jpg" alt="三ツ峠登山の様子" data-ja="三ツ峠登山の様子" data-en="Mt. Mitsutouge Hiking Scene" class="rounded-2xl shadow-soft object-cover w-full h-52" />
-        <img src="images/mountain-trail.jpg" alt="クマガイソウ保護活動の様子" data-ja="クマガイソウ保護活動の様子" data-en="Cypripedium Conservation Activity Scene" class="rounded-2xl shadow-soft object-cover w-full h-52" />
-        <img src="images/washitsu.jpg" alt="富士山おむすび作り体験" data-ja="富士山おむすび作り体験" data-en="Fuji Rice Ball Making Experience" class="rounded-2xl shadow-soft object-cover w-full h-52" />
-        <img src="images/bbq-set.jpg" alt="地域住民との交流" data-ja="地域住民との交流" data-en="Interaction with Local Residents" class="rounded-2xl shadow-soft object-cover w-full h-52" />
+        <img src="images/mitutougenoyado.jpg" alt="三ツ峠登山の様子" data-ja="三ツ峠登山の様子" data-en="Mt. Mitsutouge Hiking Scene" class="rounded-2xl shadow-soft object-cover w-full h-52" />
+        <img src="images/climbing.jpg" alt="クマガイソウ保護活動の様子" data-ja="クマガイソウ保護活動の様子" data-en="Cypripedium Conservation Activity Scene" class="rounded-2xl shadow-soft object-cover w-full h-52" />
+        <img src="images/huton.jpg" alt="富士山おむすび作り体験" data-ja="富士山おむすび作り体験" data-en="Fuji Rice Ball Making Experience" class="rounded-2xl shadow-soft object-cover w-full h-52" />
+        <img src="images/omusubi-woman.jpg" alt="地域住民との交流" data-ja="地域住民との交流" data-en="Interaction with Local Residents" class="rounded-2xl shadow-soft object-cover w-full h-52" />
       </div>
+    </div>
+    <div class="mt-8 flex flex-wrap items-center gap-4 justify-center">
+      <a href="#dates" class="text-black font-semibold rounded-xl px-6 py-3 shadow-soft flex items-center gap-2">
+        <span class="text-2xl">📅</span>
+        <span data-ja="ツアー日程" data-en="Tour Dates">ツアー日程</span>
+      </a>
     </div>
   </section>
 
@@ -239,38 +238,36 @@
 
         <div>
           <h3 class="font-semibold text-xl mb-3" data-ja="1日目：地域の自然と文化に触れる" data-en="Day 1: Discover Local Nature & Culture">1日目：地域の自然と文化に触れる</h3>
-          <ul class="list-disc pl-5 space-y-2 text-white" data-ja="<li>13：30 ツアー概要のブリーフィング</li><li>14：00 クマガイソウ保護活動に関する学習</li><li>15：00 三ツ峠グリーンセンターにて早めの入浴・心身をリフレッシュ</li><li>18：00 地元食材を使った夕食</li><li>20：00 三ツ峠の宿にチェックイン</li>" data-en="<li>1:30 PM - Tour orientation</li><li>2:00 PM - Learn about Cypripedium conservation</li><li>3:00 PM - Relaxing hot spring bath at Green Center</li><li>6:00 PM - Dinner with local ingredients</li><li>8:00 PM - Check-in at Mitsutouge Lodge</li>">
+          <ul class="list-disc pl-5 space-y-2 text-white" data-ja="<li>13：30 ツアー概要のブリーフィング</li><li>14：00 クマガイソウ保護活動に関する学習</li><li>16：30 地域の人々との交流バーベキュー</li>" data-en="<li>1:30 PM - Tour orientation</li><li>2:00 PM - Learn about Cypripedium conservation</li><li>4:30 PM - Community barbecue with local people</li>">
             <li>13：30 ツアー概要のブリーフィング</li>
             <li>14：00 クマガイソウ保護活動に関する学習</li>
-            <li>15：00 三ツ峠グリーンセンターにて早めの入浴・心身をリフレッシュ</li>
-            <li>18：00 地元食材を使った夕食</li>
-            <li>20：00 三ツ峠の宿にチェックイン</li>
+            <li>16：30 地域の人々との交流バーベキュー</li>
           </ul>
         </div>
 
         <div>
           <h3 class="font-semibold text-xl mb-3" data-ja="2日目：登山とバーベキュー" data-en="Day 2: Mountain Adventure & Community BBQ">2日目：登山とバーベキュー</h3>
-          <ul class="list-disc pl-5 space-y-2 text-white" data-ja="<li>7：00 富士山おむすび作り体験<ul class=&quot;pl-5 mt-2 space-y-1 text-white/90&quot;><li>・宿オーナーによる指導</li><li>・今回開発したレシピでのおむすび完成</li></ul></li><li>8：00 宿を出発</li><li>8：10 三ツ峠駅で記念撮影</li><li>9：00 天下茶屋側登山口よりトレッキング開始</li><li>11：00 山頂到着、富士山おむすびで昼食</li><li>15：00 下山完了、宿で着替え</li><li>16：00 グリーンセンターで温泉入浴</li><li>18：00 地域の人々との交流バーベキュー</li>" data-en="<li>7:00 Fuji Rice Ball making experience<ul class=&quot;pl-5 mt-2 space-y-1 text-white/90&quot;><li>・Guidance by lodge owner</li><li>・Complete rice balls with newly developed recipe</li></ul></li><li>8:00 Depart from lodge</li><li>8:10 Commemorative photo at Mitsutouge Station</li><li>9:00 Start trekking from Tenka-chaya trailhead</li><li>11:00 Arrive at summit, lunch with Fuji Rice Ball</li><li>15:00 Complete descent, change clothes at lodge</li><li>16:00 Hot spring bath at Green Center</li><li>18:00 Community barbecue with local people</li>">
+          <ul class="list-disc pl-5 space-y-2 text-white" data-ja="<li>7：00 富士山おむすび作り体験<ul class=&quot;pl-5 mt-2 space-y-1 text-white/90&quot;><li>・宿オーナーによる指導</li><li>・今回開発したレシピでのおむすび完成</li></ul></li><li>8：00 ガイドとともに宿を出発</li><li>8：10 三ツ峠駅で記念撮影</li><li>9：00 天下茶屋側登山口よりトレッキング開始</li><li>12：00 山頂到着、富士山おむすびで昼食</li><li>15：00 下山完了、宿で着替え</li><li>16：00 グリーンセンターで温泉入浴</li><li>18：00 地元食材を使った夕食</li>" data-en="<li>7:00 Fuji Rice Ball making experience<ul class=&quot;pl-5 mt-2 space-y-1 text-white/90&quot;><li>・Guidance by lodge owner</li><li>・Complete rice balls with newly developed recipe</li></ul></li><li>8:00 Depart from lodge</li><li>8:10 Commemorative photo at Mitsutouge Station</li><li>9:00 Start trekking from Tenka-chaya trailhead</li><li>12:00 Arrive at summit, lunch with Fuji Rice Ball</li><li>15:00 Complete descent, change clothes at lodge</li><li>16:00 Hot spring bath at Green Center</li><li>18:00 Dinner with local ingredients</li>">
             <li>7：00 富士山おむすび作り体験
               <ul class="pl-5 mt-2 space-y-1 text-white/90">
                 <li>・宿オーナーによる指導</li>
                 <li>・今回開発したレシピでのおむすび完成</li>
               </ul>
             </li>
-            <li>8：00 宿を出発</li>
+            <li>8：00 ガイドとともに宿を出発</li>
             <li>8：10 三ツ峠駅で記念撮影</li>
             <li>9：00 天下茶屋側登山口よりトレッキング開始</li>
-            <li>11：00 山頂到着、富士山おむすびで昼食</li>
+            <li>12：00 山頂到着、富士山おむすびで昼食</li>
             <li>15：00 下山完了、宿で着替え</li>
             <li>16：00 グリーンセンターで温泉入浴</li>
-            <li>18：00 地域の人々との交流バーベキュー</li>
+            <li>18：00 地元食材を使った夕食</li>
           </ul>
         </div>
 
         <div>
-          <h3 class="font-semibold text-xl mb-3" data-ja="3日目：地場産業体験" data-en="Day 3: Local Craft Experience">3日目：地場産業体験</h3>
-          <ul class="list-disc pl-5 space-y-2 text-white" data-ja="<li>9：30 地場産業体験（以下から選択）<ul class=&quot;pl-5 mt-2 space-y-1 text-white/90&quot;><li>・槙田商店での工場見学</li><li>・地元工房でのガラス吹き体験</li></ul></li><li>12：00 解散</li>" data-en="<li>9:30 AM - Choose your local craft experience<ul class=&quot;pl-5 mt-2 space-y-1 text-white/90&quot;><li>・Factory tour at Makita Store</li><li>・Glass blowing workshop</li></ul></li><li>12:00 PM - Tour concludes</li>">
-            <li>9：30 地場産業体験（以下から選択）
+          <h3 class="font-semibold text-xl mb-3" data-ja="3日目：地域探求" data-en="Day 3: Local Craft Experience">3日目：地域探求</h3>
+          <ul class="list-disc pl-5 space-y-2 text-white" data-ja="<li>9：30 西桂町でのコンテンツ体験（どちらかを選択）<ul class=&quot;pl-5 mt-2 space-y-1 text-white/90&quot;><li>・槙田商店での工場見学</li><li>・地元工房でのガラス吹き体験</li></ul></li><li>12：00 解散</li>" data-en="<li>9:30 AM - Choose your local craft experience in Nishikatsura Town<ul class=&quot;pl-5 mt-2 space-y-1 text-white/90&quot;><li>・Factory tour at Makita Store</li><li>・Glass blowing workshop</li></ul></li><li>12:00 PM - Tour concludes</li>">
+            <li>9：30 西桂町でのコンテンツ体験（どちらかを選択）
               <ul class="pl-5 mt-2 space-y-1 text-white/90">
                 <li>・槙田商店での工場見学</li>
                 <li>・地元工房でのガラス吹き体験</li>
@@ -285,7 +282,7 @@
         </div>
       </div>
       <div class="mt-10 text-center">
-        <a href="https://forms.gle/g1FDUY1GC5Tz23GR7" class="bg-white text-black font-semibold rounded-xl px-6 py-3 shadow-soft flex items-center gap-2 justify-center inline-flex">
+        <a href="https://e.japanticket.com/shops/6645/products/11873/" class="bg-white text-black font-semibold rounded-xl px-6 py-3 shadow-soft flex items-center gap-2 justify-center inline-flex">
           <span class="text-2xl">✍️</span>
           <span data-ja="申し込む" data-en="Book now">申し込む</span>
         </a>
@@ -301,17 +298,17 @@
       <div class="mt-8 grid md:grid-cols-2 gap-8">
         <div class="bg-orange-50/30 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-white/30">
           <h3 class="font-semibold text-lg" data-ja="1. 登山ガイドと挑む三ツ峠登山" data-en="1. Guided Mt. Mitsutouge Summit Trek">1. 登山ガイドと挑む三ツ峠登山</h3>
-          <div class="mt-4 space-y-3 text-orange-950" data-ja="<p class=&quot;text-base md:text-lg&quot;>・登山ガイド先導のもと、三ツ峠山頂（標高1,785m）を目指す本格的なトレッキング</p><p class=&quot;text-base md:text-lg&quot;>・自身の体力と向き合い、困難を乗り越えた先に待つ達成感</p><p class=&quot;text-base md:text-lg&quot;>・富士山の絶景を独占できる特別な時間</p>" data-en="<p class=&quot;text-base md:text-lg&quot;>・Professional guided trek to Mt. Mitsutouge summit (1,785m)</p><p class=&quot;text-base md:text-lg&quot;>・Push your limits and feel the incredible sense of achievement</p><p class=&quot;text-base md:text-lg&quot;>・Exclusive access to breathtaking Mt. Fuji views</p>">
-            <p class="text-base md:text-lg">・登山ガイド先導のもと、三ツ峠山頂（標高1,785m）を目指す本格的なトレッキング</p>
+          <div class="mt-4 space-y-3 text-orange-950" data-ja="<p class=&quot;text-base md:text-lg&quot;>・登山ガイド先導のもと、三ツ峠山頂（標高1,785m）を目指すトレッキング</p><p class=&quot;text-base md:text-lg&quot;>・自身の体力と向き合い、困難を乗り越えた先に待つ達成感</p><p class=&quot;text-base md:text-lg&quot;>・富士山の絶景を独占できる特別な時間</p>" data-en="<p class=&quot;text-base md:text-lg&quot;>・Professional guided trek to Mt. Mitsutouge summit (1,785m)</p><p class=&quot;text-base md:text-lg&quot;>・Push your limits and feel the incredible sense of achievement</p><p class=&quot;text-base md:text-lg&quot;>・Exclusive access to breathtaking Mt. Fuji views</p>">
+            <p class="text-base md:text-lg">・登山ガイド先導のもと、三ツ峠山頂（標高1,785m）を目指すトレッキング</p>
             <p class="text-base md:text-lg">・自身の体力と向き合い、困難を乗り越えた先に待つ達成感</p>
             <p class="text-base md:text-lg">・富士山の絶景を独占できる特別な時間</p>
           </div>
         </div>
         <div class="bg-orange-50/30 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-white/30">
           <h3 class="font-semibold text-lg" data-ja="2. 地域の宝「クマガイソウ」との出会い" data-en="2. Endangered Cypripedium Conservation">2. 地域の宝「クマガイソウ」との出会い</h3>
-          <div class="mt-4 space-y-3 text-orange-950" data-ja="<p class=&quot;text-base md:text-lg&quot;>・絶滅危惧種クマガイソウの群生地を訪問</p><p class=&quot;text-base md:text-lg&quot;>・専門家の指導のもと、クマガイソウの生態と保護について学習</p><p class=&quot;text-base md:text-lg&quot;>・地域の自然保護の重要性を深く理解</p>" data-en="<p class=&quot;text-base md:text-lg&quot;>・Visit endangered Cypripedium habitat</p><p class=&quot;text-base md:text-lg&quot;>・Learn about conservation under expert guidance</p><p class=&quot;text-base md:text-lg&quot;>・Understand the importance of protecting local nature</p>">
-            <p class="text-base md:text-lg">・絶滅危惧種クマガイソウの群生地を訪問</p>
-            <p class="text-base md:text-lg">・専門家の指導のもと、クマガイソウの生態と保護について学習</p>
+          <div class="mt-4 space-y-3 text-orange-950" data-ja="<p class=&quot;text-base md:text-lg&quot;>・絶滅危惧種クマガイソウと西桂町の関係を学習</p><p class=&quot;text-base md:text-lg&quot;>・クマガイソウガイドから生態と保護について学習</p><p class=&quot;text-base md:text-lg&quot;>・地域の自然保護の重要性を深く理解</p>" data-en="<p class=&quot;text-base md:text-lg&quot;>・Learn about the relationship between Cypripedium and Nishikatsura Town</p><p class=&quot;text-base md:text-lg&quot;>・Learn about ecology and conservation from Cypripedium guide</p><p class=&quot;text-base md:text-lg&quot;>・Understand the importance of protecting local nature</p>">
+            <p class="text-base md:text-lg">・絶滅危惧種クマガイソウと西桂町の関係を学習</p>
+            <p class="text-base md:text-lg">・クマガイソウガイドから生態と保護について学習</p>
             <p class="text-base md:text-lg">・地域の自然保護の重要性を深く理解</p>
           </div>
         </div>
@@ -351,7 +348,7 @@
             <div class="flex-1 min-w-0">
               <div class="flex items-center space-x-3 mb-3 md:mb-4">
                 <p class="section-kicker text-xs sm:text-sm md:text-base font-semibold tracking-widest border-l-4 border-gray-900 pl-3 md:pl-4" data-ja="料理家 守屋若奈氏 監修" data-en="Supervised by Chef Wakana Moriya">料理家 守屋若奈氏 監修</p>
-                <a href="https://pinkrose-wakana.com/profile.html" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+                <a href="https://pinkrose-wakana.com/index.html" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
                   <img src="images/pink-rose-logo.jpg" alt="PinkRose ロゴ" class="w-16 h-16 sm:w-20 sm:h-20 object-contain" />
                 </a>
               </div>
@@ -365,7 +362,7 @@
                   <p data-ja="・料理教室開催、企業との商品開発、飲食店メニュー提案" data-en="・Cooking classes, product development with companies, restaurant menu proposals">・料理教室開催、企業との商品開発、飲食店メニュー提案</p>
                   <p data-ja="・山梨の豊かな食材の魅力を広める普及活動" data-en="・Activities to promote the charm of Yamanashi's rich ingredients">・山梨の豊かな食材の魅力を広める普及活動</p>
                   <p class="mt-3">
-                    <a href="https://pinkrose-wakana.com/profile.html" target="_blank" rel="noopener" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium transition-colors" data-ja="→ PinkRose公式サイト" data-en="→ PinkRose Official Website">
+                    <a href="https://pinkrose-wakana.com/index.html" target="_blank" rel="noopener" class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium transition-colors" data-ja="→ PinkRose公式サイト" data-en="→ PinkRose Official Website">
                       → PinkRose公式サイト
                       <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
@@ -391,11 +388,10 @@
             </div>
 
             <div class="mt-6 space-y-4">
-              <h4 class="text-lg font-semibold text-orange-950" data-ja="選べる3種の具材" data-en="Three Types of Ingredients to Choose From">選べる3種の具材</h4>
-              <ul class="list-disc pl-5 space-y-2" data-ja="<li>甲州地どりバージョン（高タンパク、スタミナ）</li><li>甲州牛しぐれ煮バージョン</li><li>甲州ワインビーフ赤ワイン煮バージョン</li>" data-en="<li>Koshu local chicken version (high protein, stamina)</li><li>Koshu beef shigure-ni version</li><li>Koshu wine beef red wine stew version</li>">
+              <h4 class="text-lg font-semibold text-orange-950" data-ja="選べる2種の具材" data-en="Two Types of Ingredients to Choose From">選べる2種の具材</h4>
+              <ul class="list-disc pl-5 space-y-2" data-ja="<li>甲州地どりバージョン（高タンパク、スタミナ）</li><li>甲州牛しぐれ煮バージョン</li>" data-en="<li>Koshu local chicken version (high protein, stamina)</li><li>Koshu beef shigure-ni version</li>">
                 <li>甲州地どりバージョン（高タンパク、スタミナ）</li>
                 <li>甲州牛しぐれ煮バージョン</li>
-                <li>甲州ワインビーフ赤ワイン煮バージョン</li>
               </ul>
             </div>
 
@@ -424,7 +420,7 @@
   </section>
 
   <!-- Price & CTA -->
-  <section id="price" class="bg-orange-600 text-white" style="background-color: #ea580c;">
+  <section id="price" class="bg-orange-600 text-white pb-16" style="background-color: #ea580c;">
     <div class="container mx-auto px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h2 class="text-2xl md:text-3xl font-bold" data-ja="料金" data-en="Pricing">料金</h2>
@@ -437,12 +433,6 @@
           <li class="pl-4">- 食事代（朝食２食　昼食1食　夕食2食）</li>
           <li class="pl-4">- イベント保険</li>
         </ul>
-        <div class="mt-8 flex flex-wrap items-center gap-4 justify-center md:justify-start">
-          <a href="https://forms.gle/g1FDUY1GC5Tz23GR7" class="bg-white text-black font-semibold rounded-xl px-6 py-3 shadow-soft flex items-center gap-2">
-            <span class="text-2xl">✍️</span>
-            <span data-ja="申し込む" data-en="Book Now">申し込む</span>
-          </a>
-        </div>
       </div>
       <div class="rounded-2xl p-6 shadow-soft text-black bg-white">
         <h3 class="font-semibold" data-ja="含まれないもの" data-en="Not Included">含まれないもの</h3>
@@ -456,6 +446,12 @@
           <li>身分証明書</li>
         </ul>
       </div>
+    </div>
+    <div class="mt-8 flex flex-wrap items-center gap-4 justify-center">
+      <a href="https://e.japanticket.com/shops/6645/products/11873/" class="bg-white text-black font-semibold rounded-xl px-6 py-3 shadow-soft flex items-center gap-2">
+        <span class="text-2xl">✍️</span>
+        <span data-ja="申し込む" data-en="Book Now">申し込む</span>
+      </a>
     </div>
   </section>
 
@@ -472,13 +468,14 @@
               <div class="space-y-4 h-full">
                 <div>
                   <h4 class="font-medium text-orange-800 mb-2" data-ja="10月" data-en="October">10月</h4>
-                  <ul class="space-y-1 text-sm">
+                  <ul class="space-y-1 text-sm" data-ja="<li>10/29(水)–10/31(金)</li><li>10/31(金)–11/2(日)</li>" data-en="<li>10/29(Wed)–10/31(Fri)</li><li>10/31(Fri)–11/2(Sun)</li>">
+                    <li>10/29(水)–10/31(金)</li>
                     <li>10/31(金)–11/2(日)</li>
                   </ul>
                 </div>
                 <div>
                   <h4 class="font-medium text-orange-800 mb-2" data-ja="11月" data-en="November">11月</h4>
-                  <ul class="space-y-1 text-sm">
+                  <ul class="space-y-1 text-sm" data-ja="<li>11/2(日)–4(火)</li><li>11/7(金)–9(日)</li><li>11/9(日)–11(火)</li><li>11/11(火)–13(木)</li><li>11/13(木)–15(土)</li><li>11/15(土)–17(月)</li><li>11/17(月)–19(水)</li><li>11/19(水)–21(金)</li><li>11/21(金)–23(日)</li><li>11/23(日)–25(火)</li><li>11/25(火)–27(木)</li><li>11/27(木)–29(土)</li><li>11/29(土)–12/1(月)</li>" data-en="<li>11/2(Sun)–4(Tue)</li><li>11/7(Fri)–9(Sun)</li><li>11/9(Sun)–11(Tue)</li><li>11/11(Tue)–13(Thu)</li><li>11/13(Thu)–15(Sat)</li><li>11/15(Sat)–17(Mon)</li><li>11/17(Mon)–19(Wed)</li><li>11/19(Wed)–21(Fri)</li><li>11/21(Fri)–23(Sun)</li><li>11/23(Sun)–25(Tue)</li><li>11/25(Tue)–27(Thu)</li><li>11/27(Thu)–29(Sat)</li><li>11/29(Sat)–12/1(Mon)</li>">
                     <li>11/2(日)–4(火)</li>
                     <li>11/7(金)–9(日)</li>
                     <li>11/9(日)–11(火)</li>
@@ -522,7 +519,7 @@
         </div>
         <div class="mt-6">
           <div class="mt-8 flex flex-wrap items-center gap-4 justify-center">
-            <a href="https://forms.gle/g1FDUY1GC5Tz23GR7" class="bg-white hover:bg-orange-50 text-orange-950 font-semibold rounded-xl px-6 py-3 shadow-soft flex items-center gap-2">
+            <a href="https://e.japanticket.com/shops/6645/products/11873/" class="bg-white hover:bg-orange-50 text-orange-950 font-semibold rounded-xl px-6 py-3 shadow-soft flex items-center gap-2">
               <span class="text-2xl">✍️</span>
               <span data-ja="申し込む" data-en="Book Now">申し込む</span>
             </a>
@@ -664,7 +661,7 @@
   <script src="assets/js/language-switcher.js"></script>
 
   <!-- 固定申し込みボタン -->
-  <a href="https://forms.gle/g1FDUY1GC5Tz23GR7" class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 bg-white hover:bg-orange-50 text-orange-950 font-semibold rounded-full px-4 py-3 sm:px-6 sm:py-4 shadow-lg flex items-center gap-1 sm:gap-2 transition-all hover:scale-105 z-50 text-sm sm:text-base">
+  <a href="https://e.japanticket.com/shops/6645/products/11873/" class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 bg-white hover:bg-orange-50 text-orange-950 font-semibold rounded-full px-4 py-3 sm:px-6 sm:py-4 shadow-lg flex items-center gap-1 sm:gap-2 transition-all hover:scale-105 z-50 text-sm sm:text-base">
     <span class="text-lg sm:text-2xl">✍️</span>
     <span class="sm:inline" data-ja="申し込む" data-en="Book Now" data-zh="立即预订" data-ko="예약하기" data-fr="Réserver" data-es="Reservar">申し込む</span>
   </a>
